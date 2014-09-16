@@ -4,7 +4,8 @@ Package.describe({
 });
 
 Package.on_use(function (api) {
-
+  api.use('tracker');
+  
   Npm.depends({cheerio: '0.17.0'});
 
   api.add_files('server/crawler.js', ['server']);
